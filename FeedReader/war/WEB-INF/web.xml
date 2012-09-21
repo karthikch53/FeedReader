@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
 	<servlet>
 		<servlet-name>GetMatchDetail</servlet-name>
 		<servlet-class>com.feed.reader.GetMatchDetail</servlet-class>
 	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>GetMatchDetail</servlet-name>
 		<url-pattern>/getMatchDetail</url-pattern>
 	</servlet-mapping>
 	
+	
 	<servlet>
-		<servlet-name>GetAllMacthes</servlet-name>
-		<servlet-class>com.feed.reader.GetAllMatches</servlet-class>
+		<servlet-name>matchList</servlet-name>
+		<servlet-class>com.feed.reader.MatchList</servlet-class>
 	</servlet>
+	
 	<servlet-mapping>
-		<servlet-name>GetAllMacthes</servlet-name>
-		<url-pattern>/getAllMatches</url-pattern>
+		<servlet-name>matchList</servlet-name>
+		<url-pattern>/matchList</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>matchDetail</servlet-name>
+		<servlet-class>com.feed.reader.MatchDetail</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>matchDetail</servlet-name>
+		<url-pattern>/matchDetail</url-pattern>
 	</servlet-mapping>
 	
 	
