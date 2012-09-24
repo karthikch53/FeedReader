@@ -3,6 +3,6 @@
   <cron>
     <url>/getMatchDetail</url>
     <description>Get Individual Match Details</description>
-    <schedule>every 1 minutes</schedule>
+    <schedule>every 3 minutes</schedule>
   </cron> 
 </cronentries>
