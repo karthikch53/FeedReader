@@ -62,7 +62,7 @@ public class GetMatchDetail extends HttpServlet
 		
 		try 
 		{
-			logger.log(Level.INFO, "Going to iterate through match list and get individual scores");
+			logger.log(Level.INFO, "Iterating through match list and get individual scores");
 			matchDetailMap = new LinkedHashMap<String, String>();
 			maps.setKey(key);
 			driver = new HtmlUnitDriver() ;
